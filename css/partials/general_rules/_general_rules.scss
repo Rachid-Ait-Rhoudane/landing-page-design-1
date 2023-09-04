@@ -1,0 +1,33 @@
+// Import mixins
+@use "./partials/helpers/mixins" as *;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    @include breakpoints(mobile) {
+        width: 100%;
+    };
+    @include breakpoints(small) {
+        width: 750px;
+    };
+    @include breakpoints(medium) {
+        width: 970px;
+    };
+    @include breakpoints(large) {
+        width: 1170px;
+    };
+}
