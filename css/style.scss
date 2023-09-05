@@ -1,5 +1,8 @@
 // Import general rules
 @use "./partials/general_rules/general_rules";
 
-//Import header styles
-@use "./partials/sections/header"
+// Import header styles
+@use "./partials/sections/header";
+
+// Import landing styles
+@use "./partials/sections/landing";

@@ -142,3 +142,33 @@ a {
 .header li:not(:last-child) a {
   border-bottom: 1px solid #DDD;
 }
+
+.landing {
+  background: #DDD url("../images/landing.jpg");
+  background-size: cover;
+  height: calc(100vh - 64px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.landing .intro-text {
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+}
+.landing h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: #10cab7;
+}
+.landing p {
+  font-size: 19px;
+  line-height: 1.8;
+}
