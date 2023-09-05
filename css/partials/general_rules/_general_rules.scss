@@ -15,6 +15,10 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     padding: 0 15px;
     margin: 0 auto;
@@ -30,7 +34,7 @@ body {
     @include breakpoints(medium) {
         width: 970px;
     };
-    
+
     @include breakpoints(large) {
         width: 1170px;
     };
