@@ -25,12 +25,8 @@
         &:not(&:first-of-type) {
             position: relative;
             z-index: -1;
-            background: {
-                color: #333;
-            }
-            margin: {
-                bottom: 5px;
-            }
+            background-color: #333;
+            margin-bottom: 5px;
             height: 2px;
         }
         &:first-of-type {
@@ -56,9 +52,7 @@
         }
     }
     ul {
-        background: {
-            color: $section-color;
-        }
+        background-color: $section-color;
         position: absolute;
         min-width: 200px;
         right: 0;
@@ -84,21 +78,15 @@
         display: block;
         padding: 15px;
         color: #333;
-        transition: {
-            duration:0.3s;
-        };
+        transition-duration:0.3s;
         &:hover {
-            padding: {
-                left: 25px;
-            } ;
+            padding-left: 25px;
         }
     }
     li {
         &:not(&:last-child) {
             a {
-                border: {
-                    bottom: 1px solid #DDD;
-                }
+                border-bottom: 1px solid #DDD;
             }
         }
     }
