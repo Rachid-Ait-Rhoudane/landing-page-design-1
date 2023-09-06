@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -62,9 +66,6 @@ a {
 .header .links {
   position: relative;
 }
-.header .links:hover span:nth-of-type(3) {
-  width: 100%;
-}
 .header .icon {
   position: relative;
   width: 30px;
@@ -78,7 +79,7 @@ a {
           justify-content: flex-end;
   cursor: pointer;
 }
-.header span:not(:first-of-type) {
+.header span:not(.header span:first-of-type) {
   position: relative;
   z-index: -1;
   background-color: #333;
@@ -107,9 +108,6 @@ a {
   width: 100%;
 }
 .header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   background-color: #F6F6F6;
   position: absolute;
   min-width: 200px;
@@ -122,9 +120,10 @@ a {
 }
 .header ul::before {
   content: "";
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent #F6F6F6 transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #F6F6F6;
+  border-left: 10px solid transparent;
   position: absolute;
   top: -19px;
   right: 5px;
@@ -139,7 +138,7 @@ a {
 .header a:hover {
   padding-left: 25px;
 }
-.header li:not(:last-child) a {
+.header li:not(.header li:last-child) a {
   border-bottom: 1px solid #DDD;
 }
 

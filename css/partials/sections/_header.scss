@@ -1,4 +1,4 @@
-@use "../general_rules/variables" as *;
+@use "../general/variables" as *;
 
 .header {
     padding: 20px;
@@ -12,13 +12,6 @@
     }
     .links {
         position: relative;
-        &:hover {
-            span {
-                &:nth-of-type(3) {
-                    width: 100%;
-                }
-            }
-        }
     }
     .icon {
         position: relative;
@@ -29,11 +22,15 @@
         cursor: pointer;
     }
     span {
-        &:not(:first-of-type) {
+        &:not(&:first-of-type) {
             position: relative;
             z-index: -1;
-            background-color: #333;
-            margin-bottom: 5px;
+            background: {
+                color: #333;
+            }
+            margin: {
+                bottom: 5px;
+            }
             height: 2px;
         }
         &:first-of-type {
@@ -48,8 +45,10 @@
             width: 100%;
         }
         &:nth-of-type(3) {
-            transition-duration: 0.3s;
-            transition-timing-function: linear;
+            transition: {
+                duration: 0.3s;
+                timing-function: linear;
+            }
             width: 50%;
         }
         &:last-of-type {
@@ -57,10 +56,9 @@
         }
     }
     ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        background-color: $section-color;
+        background: {
+            color: $section-color;
+        }
         position: absolute;
         min-width: 200px;
         right: 0;
@@ -71,9 +69,12 @@
         }
         &::before {
             content: '';
-            border-width: 10px;
-            border-style: solid;
-            border-color: transparent transparent $section-color transparent;
+            border: {
+                top: 10px solid transparent;
+                right: 10px solid transparent;
+                bottom: 10px solid $section-color;
+                left: 10px solid transparent;
+            };
             position: absolute;
             top: -19px;
             right: 5px;
@@ -83,15 +84,21 @@
         display: block;
         padding: 15px;
         color: #333;
-        transition-duration: 0.3s;
+        transition: {
+            duration:0.3s;
+        };
         &:hover {
-            padding-left: 25px;
+            padding: {
+                left: 25px;
+            } ;
         }
     }
     li {
-        &:not(:last-child) {
+        &:not(&:last-child) {
             a {
-                border-bottom: 1px solid #DDD;
+                border: {
+                    bottom: 1px solid #DDD;
+                }
             }
         }
     }
