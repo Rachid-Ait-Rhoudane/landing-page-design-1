@@ -1,3 +1,4 @@
+// breakpoints is a mixin to use for responsive design
 @mixin breakpoints($screen-size) {
 
     @if $screen-size == mobile {

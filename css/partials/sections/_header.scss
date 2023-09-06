@@ -1,4 +1,5 @@
 @use "../general/variables" as *;
+@use "../helpers/placeholders" as *;
 
 .header {
     padding: 20px;
@@ -22,13 +23,6 @@
         cursor: pointer;
     }
     span {
-        &:not(&:first-of-type) {
-            position: relative;
-            z-index: -1;
-            background-color: #333;
-            margin-bottom: 5px;
-            height: 2px;
-        }
         &:first-of-type {
             position: absolute;
             top: 0;
@@ -38,9 +32,11 @@
             z-index: 1;
         }
         &:nth-of-type(2){
+            @extend %horizontal-icon-lignes;
             width: 100%;
         }
         &:nth-of-type(3) {
+            @extend %horizontal-icon-lignes;
             transition: {
                 duration: 0.3s;
                 timing-function: linear;
@@ -48,6 +44,7 @@
             width: 50%;
         }
         &:last-of-type {
+            @extend %horizontal-icon-lignes;
             width: 100%;
         }
     }
