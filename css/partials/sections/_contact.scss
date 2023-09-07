@@ -1,0 +1,44 @@
+@use "../general/variables" as *;
+@use "../helpers/mixins" as *;
+
+.contact {
+    padding: {
+        top: $section-padding;
+        bottom: $section-padding;
+    };
+    background-color: $section-color;
+    .info {
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: 800;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        @include breakpoints(mobile) {
+            font-size: 20px;
+        }
+        .label {
+            color: $secondary-color;
+        }
+        .link {
+            display: block;
+            color: $main-color;
+            
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                a {
+                    color: $secondary-color;
+                }
+            }
+        }
+     }
+}
