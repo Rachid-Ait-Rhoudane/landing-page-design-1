@@ -22,8 +22,12 @@ ul {
 }
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .container {
@@ -188,17 +192,17 @@ ul {
 }
 .landing .intro-text {
   text-align: center;
-  width: 320px;
-  max-width: 100%;
 }
 .landing h1 {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 75px;
   color: #10cab7;
+  margin: 0;
 }
 .landing p {
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.8;
+  color: #777;
 }
 
 .features {

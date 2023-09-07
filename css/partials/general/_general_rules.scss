@@ -24,8 +24,14 @@ ul {
 }
 
 .container {
-    padding: 0 15px;
-    margin: 0 auto;
+    padding: 15px {
+        top: 0;
+        bottom: 0;
+    };
+    margin: auto {
+        top: 0;
+        bottom: 0;
+    };
 
     @include breakpoints(mobile) {
         width: 100%;

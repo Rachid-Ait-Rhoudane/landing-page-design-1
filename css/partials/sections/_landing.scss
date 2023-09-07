@@ -12,18 +12,18 @@
     align-items: center;
     .intro-text {
         text-align: center;
-        width: 320px;
-        max-width: 100%;
     }
     h1 {
         font: {
-            weight: 800;
-            size: 50px;
+            weight: $text-weight;
+            size: 75px;
         };
         color: $main-color;
+        margin: 0;
     }
     p {
-        font-size: 19px;
+        font-size: 22px;
         line-height: $paragraphs-line-height;
+        color: $text-color;
     }
 }
