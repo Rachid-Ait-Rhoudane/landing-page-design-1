@@ -1,0 +1,25 @@
+@use "../general/variables" as *;
+@use "../helpers/mixins" as *;
+
+footer {
+    background-color: $secondary-color;
+    padding: {
+        top: $section-padding;
+        bottom: $section-padding;
+    };
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    @include breakpoints(mobile) {
+        font-size: 20px;
+    }
+    span {
+        margin: {
+            left: 5px;
+            right: 5px;
+        };
+        color: $main-color;
+    }
+}

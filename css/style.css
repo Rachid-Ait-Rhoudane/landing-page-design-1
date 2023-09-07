@@ -537,3 +537,30 @@ ul {
 .contact .info .social .social-icons a {
   color: #2c4755;
 }
+
+footer {
+  background-color: #2c4755;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  footer {
+    font-size: 20px;
+  }
+}
+footer span {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #10cab7;
+}
