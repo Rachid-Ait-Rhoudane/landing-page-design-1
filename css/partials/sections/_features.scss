@@ -1,0 +1,31 @@
+@use "../general/variables" as *;
+
+.features {
+    background-color: $section-color;
+    padding: 0 {
+        top: $section-padding;
+        bottom: $section-padding;
+    };
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 40px;
+    }
+    .feat {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        i{
+            color: $main-color;
+        }
+        h3{
+            font-weight: 800;
+        }
+        p{
+            line-height: 1.8;
+            font-size: 18px;
+            color: #777;
+        }
+    }
+}
