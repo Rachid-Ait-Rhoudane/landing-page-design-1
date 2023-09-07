@@ -1,0 +1,63 @@
+@use "../general/variables" as *;
+@use "../helpers/mixins" as *;
+
+.services{
+    padding: 0 {
+        top: $section-padding;
+        bottom: $section-padding;
+    };
+    .services-content{
+        @include grid-system(30px);
+        margin-top: 50px;
+    }
+    .srv {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 40px;
+        @include breakpoints(mobile) {
+            flex-direction: column;
+            text-align: center;
+        }
+        i {
+            font-size: 50px;
+            color: $main-color;
+        }
+        .text {
+            flex: 1;
+            h3 {
+                margin-bottom: 5px;
+                font-weight: 800;
+            }
+            p {
+                color: #777;
+                line-height: 1.8;
+            }
+        }
+    }
+    .image {
+        position: relative;
+        width: 260px;
+        @include breakpoints(mobile) {
+            display: none;
+        }
+        @include breakpoints(small) {
+            display: none;
+        }
+        @include breakpoints(medium) {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -55px;
+            z-index: -1;
+            background-color: $secondary-color;
+            width: 100px;
+            height: calc(100% + 100px);
+        }
+    }
+}

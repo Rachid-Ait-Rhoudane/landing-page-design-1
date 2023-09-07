@@ -27,3 +27,10 @@
 
     }
 }
+
+// grid-system is a mixin that devides the page into three columns
+@mixin grid-system($gap) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: $gap;
+}

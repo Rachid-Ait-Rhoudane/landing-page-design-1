@@ -1,4 +1,5 @@
 @use "../general/variables" as *;
+@use "../helpers/mixins" as *;
 
 .features {
     background-color: $section-color;
@@ -7,15 +8,14 @@
         bottom: $section-padding;
     };
     .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 40px;
+        @include grid-system(30px);
         .feat {
             text-align: center;
             display: flex;
             flex-direction: column;
             gap: 20px;
             i{
+                font-size: 50px;
                 color: $main-color;
             }
             h3{
