@@ -1,6 +1,9 @@
 // Import general rules
 @use "./partials/general/general_rules";
 
+// Import components
+@use "./partials/components/special_header";
+
 // Import header styles
 @use "./partials/sections/header";
 
