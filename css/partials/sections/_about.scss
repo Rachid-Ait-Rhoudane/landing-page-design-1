@@ -78,7 +78,7 @@
                 align-items: center;
             }
             p {
-                line-height: 1.8;
+                line-height: $paragraphs-line-height;
                 &:first-of-type{
                     font-weight: 800;
                 }

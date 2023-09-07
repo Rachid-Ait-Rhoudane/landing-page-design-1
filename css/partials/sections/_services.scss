@@ -30,7 +30,7 @@
             }
             p {
                 color: $text-color;
-                line-height: 1.8;
+                line-height: $paragraphs-line-height;
             }
         }
     }
