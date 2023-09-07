@@ -80,7 +80,7 @@
             p {
                 line-height: $paragraphs-line-height;
                 &:first-of-type{
-                    font-weight: 800;
+                    font-weight: $text-weight;
                 }
                 &:last-of-type{
                     color: $text-color;

@@ -4,7 +4,7 @@
 .special-heading {
     color: $text-color;
     font-size: 100px;
-    font-weight: 800;
+    font-weight: $text-weight;
     text-align: center;
     letter-spacing: -3px;
     @include breakpoints(mobile) {
