@@ -1,3 +1,4 @@
+@use "../helpers/mixins" as *;
 @use "../general/variables" as *;
 
 .landing {
@@ -12,18 +13,28 @@
     align-items: center;
     .intro-text {
         text-align: center;
+        padding: {
+            left: 10px;
+            right: 10px;
+        };
     }
     h1 {
         font: {
             weight: $text-weight;
-            size: 75px;
+            size: 60px;
         };
+        @include breakpoints(mobile) {
+            font-size: 45px;
+        }
+        @include breakpoints(small) {
+            font-size: 45px;
+        }
         color: $main-color;
         margin: 0;
     }
     p {
         font-size: 22px;
         line-height: $paragraphs-line-height;
-        color: $text-color;
+        color: #333;
     }
 }

@@ -192,17 +192,29 @@ ul {
 }
 .landing .intro-text {
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .landing h1 {
   font-weight: 800;
-  font-size: 75px;
+  font-size: 60px;
   color: #10cab7;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .landing h1 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .landing h1 {
+    font-size: 45px;
+  }
 }
 .landing p {
   font-size: 22px;
   line-height: 1.8;
-  color: #777;
+  color: #333;
 }
 
 .features {
