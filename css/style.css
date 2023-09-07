@@ -316,3 +316,39 @@ ul {
   width: 100px;
   height: calc(100% + 100px);
 }
+
+.portfolio {
+  background-color: #F6F6F6;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.portfolio .portfolio-content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+.portfolio .portfolio-content .card {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.portfolio .portfolio-content .card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.portfolio .portfolio-content .card .info {
+  padding: 20px;
+}
+.portfolio .portfolio-content .card .info h3 {
+  margin: 0;
+}
+.portfolio .portfolio-content .card .info p {
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
