@@ -6,7 +6,6 @@
     font-weight: 800;
     text-align: center;
     letter-spacing: -3px;
-    margin: 0;
     @include breakpoints(mobile) {
         font-size: 60px;
     };

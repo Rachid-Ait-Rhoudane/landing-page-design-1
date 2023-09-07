@@ -2,7 +2,7 @@
 @use "../helpers/mixins" as *;
 
 .services{
-    padding: 0 {
+    padding: {
         top: $section-padding;
         bottom: $section-padding;
     };

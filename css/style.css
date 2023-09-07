@@ -52,7 +52,6 @@ ul {
   font-weight: 800;
   text-align: center;
   letter-spacing: -3px;
-  margin: 0;
 }
 @media (max-width: 767px) {
   .special-heading {
@@ -193,7 +192,6 @@ ul {
   max-width: 100%;
 }
 .landing h1 {
-  margin: 0;
   font-weight: bold;
   font-size: 50px;
   color: #10cab7;
@@ -205,7 +203,6 @@ ul {
 
 .features {
   background-color: #F6F6F6;
-  padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -240,7 +237,6 @@ ul {
 }
 
 .services {
-  padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -319,7 +315,6 @@ ul {
 
 .portfolio {
   background-color: #F6F6F6;
-  padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -341,14 +336,145 @@ ul {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.portfolio .portfolio-content .card h3 {
+  margin-bottom: 10px;
+  font-weight: 800;
+}
 .portfolio .portfolio-content .card .info {
   padding: 20px;
 }
-.portfolio .portfolio-content .card .info h3 {
-  margin: 0;
-}
 .portfolio .portfolio-content .card .info p {
   color: #777;
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+.about .about-content .image {
+  position: relative;
+  width: 250px;
+  height: 375px;
+}
+.about .about-content .image::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -50px;
+  z-index: -1;
+  background-color: #ebeced;
+  width: 100px;
+  height: calc(100% + 80px);
+}
+@media (max-width: 767px) {
+  .about .about-content .image::before {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .about-content .image::before {
+    display: none;
+  }
+}
+.about .about-content .image::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -150px;
+  z-index: -1;
+  width: 120px;
+  height: 300px;
+  border-left: 80px solid #10cab7;
+  border-bottom: 80px solid #10cab7;
+}
+@media (max-width: 767px) {
+  .about .about-content .image::after {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .about-content .image::after {
+    display: none;
+  }
+}
+.about .about-content .image img {
+  max-width: 100%;
+}
+.about .about-content .text {
+  -ms-flex-preferred-size: calc(100% - 500px);
+      flex-basis: calc(100% - 500px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .about .about-content .text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .about-content .text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.about .about-content .text p {
   line-height: 1.8;
-  margin-bottom: 0;
+}
+.about .about-content .text p:first-of-type {
+  font-weight: 800;
+}
+.about .about-content .text p:last-of-type {
+  color: #777;
+}
+.about .about-content .text hr {
+  border-color: #10cab7;
+  width: 50%;
 }

@@ -1,0 +1,95 @@
+@use "../general/variables" as *;
+@use "../helpers/mixins" as *;
+
+.about {
+    padding: {
+        top: $section-padding;
+        bottom: $section-padding;
+    };
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 50px;
+        @include breakpoints(mobile) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        @include breakpoints(small) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .image {
+            position: relative;
+            width: 250px;
+            height: 375px;
+            &::before{
+                content: "";
+                position: absolute;
+                left: -20px;
+                top: -50px;
+                z-index: -1;
+                background-color: #ebeced;
+                width: 100px;
+                height: calc(100% + 80px);
+                @include breakpoints(mobile) {
+                    display: none;
+                }
+                @include breakpoints(small) {
+                    display: none;
+                }
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: -50px;
+                right: -150px;
+                z-index: -1;
+                width: 120px;
+                height: 300px;
+                border: {
+                    left: 80px solid $main-color;
+                    bottom: 80px solid $main-color;
+                };
+                @include breakpoints(mobile) {
+                    display: none;
+                }
+                @include breakpoints(small) {
+                    display: none;
+                }
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+        .text {
+            flex-basis: calc(100% - 500px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            @include breakpoints(mobile) {
+                align-items: center;
+            }
+            @include breakpoints(small) {
+                align-items: center;
+            }
+            p {
+                line-height: 1.8;
+                &:first-of-type{
+                    font-weight: 800;
+                }
+                &:last-of-type{
+                    color: #777;
+                }
+            }
+            hr {
+                border-color: $main-color;
+                width: 50%;
+            }
+        }
+    }
+}
