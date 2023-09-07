@@ -186,7 +186,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 40px;
 }
-.features .feat {
+.features .container .feat {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,13 +197,13 @@ ul {
           flex-direction: column;
   gap: 20px;
 }
-.features .feat i {
+.features .container .feat i {
   color: #10cab7;
 }
-.features .feat h3 {
+.features .container .feat h3 {
   font-weight: 800;
 }
-.features .feat p {
+.features .container .feat p {
   line-height: 1.8;
   font-size: 18px;
   color: #777;
