@@ -4,26 +4,5 @@
 // Import components
 @use "./partials/components/special_header";
 
-// Import header styles
-@use "./partials/sections/header";
-
-// Import landing section styles
-@use "./partials/sections/landing";
-
-// Import features section styles
-@use "./partials/sections/features";
-
-// Import services section styles
-@use "./partials/sections/services";
-
-// Import portfolio section styles
-@use "./partials/sections/portfolio";
-
-// Import about section styles
-@use "./partials/sections/about";
-
-// Import contact section styles
-@use "./partials/sections/contact";
-
-// Import footer section styles
-@use "./partials/sections/footer";
+// Import the sections of the page
+@use "./partials/sections";
