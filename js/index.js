@@ -34,4 +34,13 @@ scrollToTop.addEventListener("click", function() {
     window.scrollTo({
         top: 0
     });
-})
+});
+
+let ele = document.querySelector(".scroller");
+
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener("scroll", () => {
+    let scroll = document.documentElement.scrollTop;
+    ele.style.width = `${ (scroll/height) * 100}%`;
+});

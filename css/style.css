@@ -109,6 +109,15 @@ ul {
   right: 20px;
 }
 
+.scroller {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #10cab7;
+}
+
 .header span:nth-of-type(2), .header span:nth-of-type(3), .header span:last-of-type {
   position: relative;
   z-index: -1;
