@@ -23,7 +23,7 @@ window.addEventListener("click", function(e) {
 let scrollToTop = document.querySelector(".up");
 
 window.addEventListener("scroll", function() {
-    if(this.scrollY > 1000) {
+    if(this.scrollY > 750) {
         scrollToTop.classList.add("show");
     } else {
         scrollToTop.classList.remove("show");

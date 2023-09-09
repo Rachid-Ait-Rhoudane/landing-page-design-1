@@ -1,0 +1,33 @@
+@use "../general/variables" as *;
+
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: $main-color;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        border: {
+            top: 20px solid $main-color;
+            right: 20px solid transparent;
+            bottom: 20px solid transparent;
+            left: 20px solid $main-color;
+        };
+    }
+    &.show {
+        right: 20px;
+    }
+}
+
