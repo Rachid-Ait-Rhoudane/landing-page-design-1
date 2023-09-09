@@ -19,3 +19,19 @@ window.addEventListener("click", function(e) {
         iconMiddleHorizontalLigne.style.width = "50%";
     }
 });
+
+let scrollToTop = document.querySelector(".up");
+
+window.addEventListener("scroll", function() {
+    if(this.scrollY > 1000) {
+        scrollToTop.classList.add("show");
+    } else {
+        scrollToTop.classList.remove("show");
+    }
+});
+
+scrollToTop.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0
+    });
+})
